@@ -1,0 +1,270 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS file within this directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the top of the
+* compiled file, but it's generally better to create a new file per style scope.
+*
+*= require bootstrap
+*= require grails
+*= require main
+*= require mobile
+*= require_self
+*/
+html, body .container-table {
+    height: 100%;
+}
+
+.container-table {
+    display: table;
+}
+
+.logout {
+    margin-right: 0.5em;
+    vertical-align: text-top;
+}
+
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.container-fluid {
+    margin: 0 auto;
+    height: 77%;
+    padding: 5px 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.glyphicon {
+    margin-right:5px;
+}
+
+.thumbnail
+{
+    margin-bottom: 20px;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.item.list-group-item
+{
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.item.list-group-item:nth-of-type(odd):hover,.item.list-group-item:hover
+{
+    background: #b9175e;
+}
+
+.item.list-group-item .list-group-image
+{
+    margin-right: 10px;
+    width: 160px;
+    height: 160px;
+}
+
+.item.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+}
+
+.item.list-group-item .caption
+{
+    padding: 9px 9px 0px 9px;
+}
+
+.item.list-group-item:nth-of-type(odd)
+{
+    background: #eeeeee;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item img
+{
+    float: left;
+}
+
+.item.list-group-item:after
+{
+    clear: both;
+}
+
+.list-group-item-text
+{
+    margin: 0 0 10px;
+}
+
+.step {
+    padding: 10px;
+    color: #b9175e;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.nextLink {
+    padding: 10px;
+    color: #b9175e;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.prevLink {
+    padding: 10px;
+    color: #b9175e;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.currentStep {
+    padding: 10px;
+    background-color: #363641;
+    color: white;
+    border: 1px solid #b9175e;
+}
+
+.step.gap {
+    display: none;
+}
+
+.step:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #b9175e;
+    border-color: #851243;
+    margin-bottom: 0.2em;
+    margin-right: 0.1em;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+    color: #fff;
+    background-color: #ab1755;
+    border-color: #851243;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #ab1755;
+    border-color: #851243;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #ab1755;
+    border-color: #851243;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+    color: #fff;
+    background-color: #ab1755;
+    border-color: #851243;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus {
+    background-color: #835460;
+    border-color: #835460;
+}
+.btn-primary .badge {
+    color: #b9175e;
+    color: #b9175e;
+    background-color: #fff;
+}
+
+.btn-default {
+    color: #eefdff;
+    background-color: #363641;
+    border-color: #ccc;
+    margin-bottom: 0.2em;
+    margin-right: 0.1em;
+}
+.btn-default:focus,
+.btn-default.focus {
+    color: #eefdff;
+    background-color: #363641;
+    border-color: #8c8c8c;
+}
+.btn-default:hover {
+    color: #eefdff;
+    background-color: #835460;
+    border-color: #adadad;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    color: #eefdff;
+    background-color: #363641;
+    border-color: #adadad;
+}
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
+    color: #eefdff;
+    background-color: #363641;
+    border-color: #8c8c8c;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    background-image: none;
+}
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus {
+    background-color: #363641;
+    border-color: #8c8c8c;
+}
+.btn-default .badge {
+    color: #fff;
+    background-color: #363641;
+}

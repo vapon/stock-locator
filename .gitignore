@@ -1,0 +1,16 @@
+Thumbs.db
+.DS_Store
+.gradle
+build/
+.idea
+*.iml
+*.ipr
+*.iws
+*.log
+.project
+.settings
+.classpath
+.asscache
+out/
+logs/
+classes/
