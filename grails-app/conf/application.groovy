@@ -8,6 +8,7 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
         [pattern: '/logout', access: ['permitAll']],
         [pattern: '/index', access: ['permitAll']],
         [pattern: '/index.gsp', access: ['permitAll']],
+        [pattern: '/admin/**', access: ['ROLE_ADMIN']],
         [pattern: '/product/index', access: ['ROLE_ADMIN', 'ROLE_USER']],
         [pattern: '/product/save', access: ['ROLE_ADMIN', 'ROLE_USER']],
         [pattern: '/product/show**', access: ['ROLE_ADMIN', 'ROLE_USER']],
@@ -34,4 +35,18 @@ grails.plugin.springsecurity.filterChain.chainMap = [
         [pattern: '/**/favicon.ico', filters: 'none'],
         [pattern: '/**', filters: 'JOINED_FILTERS']
 ]
+
+environments {
+    production {
+//        grails.serverURL = "http://www.changeme.com"
+        grails.dbconsole.enabled = true
+        grails.dbconsole.urlRoot = '/admin/dbconsole'
+    }
+//    development {
+//        grails.serverURL = "http://localhost:8282/${appName}"
+//    }
+//    test {
+//        grails.serverURL = "http://localhost:8282/${appName}"
+//    }
+}
 
