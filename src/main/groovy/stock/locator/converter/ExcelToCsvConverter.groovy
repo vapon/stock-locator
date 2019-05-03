@@ -7,10 +7,11 @@ import org.apache.poi.hssf.usermodel.HSSFRow
 import org.apache.poi.hssf.usermodel.HSSFWorkbook
 import org.apache.poi.ss.usermodel.DataFormatter
 import org.apache.poi.ss.usermodel.Workbook
+
 //import org.springframework.beans.factory.annotation.Autowired
 
 /**
- *An utility class that makes xls -> csv conversions
+ * An utility class that makes xls -> csv conversions
  *
  * @author Valentin Ponchevniy
  */
@@ -38,11 +39,13 @@ class ExcelToCsvConverter implements Converter {
                 sheet.eachWithIndex { HSSFRow row, int rowIdx ->
                     StringBuffer line = new StringBuffer()
                     row.eachWithIndex { HSSFCell cell, int cellIdx ->
-                        if (cellIdx != 0) {
-                            line.append(';')
+                        if (cell && formatter.formatCellValue(cell)) {
+                            if (cellIdx != 0) {
+                                line.append(';')
+                            }
+                            String text = formatter.formatCellValue(cell)
+                            line.append(text)
                         }
-                        String text = formatter.formatCellValue(cell)
-                        line.append(text)
                     }
                     if (line.length()) {
                         if (rowIdx != 0) {
